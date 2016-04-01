@@ -1,0 +1,39 @@
+<div class="container text-center">
+    <h1>{{title}}</h1>
+
+    <h3>{{test}}</h3>
+
+    <form>
+        <div class="form-group row">
+            <label for="hero-alias" class="form-control-label"> </label>
+            <input type="text" id="hero-alias" class="form-control" ng-model="hero.alias" placeholder="insert Alias">
+        </div>
+        <div class="form-group row">
+            <label for="hero-firstname" class="form-control-label"> </label>
+            <input type="text" id="hero-firstname" class="form-control" ng-model="hero.first_name" placeholder="insert first name ">
+        </div>
+        <div class="form-group row">
+            <label for="hero-lastname" class="form-control-label"> </label>
+            <input type="text" id="hero-lastname" class="form-control" ng-model="hero.last_name" placeholder="insert last name ">
+        </div>
+        <div class="form-group row">
+            <label for="hero-city" class="form-control-label"> </label>
+            <input type="text" id="hero-city" class="form-control" ng-model="hero.city" placeholder="insert city ">
+        </div>
+        <div class="form-group row">
+        <select ng-model="hero.power_name">
+        <option ng-repeat="power in powersArray">{{power}}</option>
+        </select>
+        </div>
+
+        <div class="form-group row">
+            <input type="submit"  class="btn-success" ng-click="postHero(hero)">
+        </div>
+
+
+    </form>
+
+
+
+
+</div>

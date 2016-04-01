@@ -1,0 +1,16 @@
+<div class="container text-center">
+    <h1>{{title}}</h1>
+
+    <h3>{{test}}</h3>
+
+
+    <div ng-repeat="hero in heroes.object">
+        <p>{{hero.alias}}</p>
+        <p>{{hero.first_name}}</p>
+        <p>{{hero.last_name}}</p>
+        <p>{{hero.city}}</p>
+        <p>{{hero.power_name}}</p>
+        <button class="btn btn-danger" ng-click="removeHero(hero._id)"> delete hero</button>
+
+    </div>
+</div>

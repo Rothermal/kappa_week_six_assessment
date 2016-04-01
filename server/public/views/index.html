@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Kappa assessment!!!</title>
+    <script src="assets/vendors/angular/angular.min.js"></script>
+    <script src="assets/vendors/angular-route/angular-route.min.js"></script>
+    <script src="assets/scripts/client.js"></script>
+    <script src="assets/scripts/services/herofactory.js"></script>
+    <script src="assets/scripts/controllers/maincontroller.js"></script>
+    <script src="assets/scripts/controllers/homecontroller.js"></script>
+    <script src="assets/scripts/controllers/formcontroller.js"></script>
+    <script src="assets/scripts/controllers/viewcontroller.js"></script>
+    <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <base href="/">
+</head>
+<body ng-controller="MainController">
+<div class="container text-center">
+<h1>{{title}}</h1>
+<a  class="btn btn-success" href="/heroform">add a hero</a>
+<a class="btn btn-primary" href="/herolist"> show the list of heros</a>
+
+<p>test!</p>
+</div>
+<main ng-view></main>
+
+
+</body>
+</html>
